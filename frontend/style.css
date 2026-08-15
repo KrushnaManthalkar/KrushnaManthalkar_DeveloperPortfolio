@@ -1,0 +1,425 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        radial-gradient(circle at top right, #164e63, transparent 35%),
+        #0f172a;
+}
+
+#home h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    max-width: 900px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#home p {
+    max-width: 650px;
+    color: #94a3b8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+
+    padding: 12px 22px;
+    border-radius: 8px;
+
+    background: #38bdf8;
+    color: #082f49;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#home a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+
+    text-align: center;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+    background: #111827;
+}
+
+#skills ul {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 15px;
+    list-style: none;
+}
+
+#skills li {
+    padding: 12px 20px;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 25px;
+
+    color: #7dd3fc;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+
+/* =========================
+   EDUCATION / EXPERIENCE
+========================= */
+
+#education > div,
+#experience > div {
+    max-width: 800px;
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+#education h3,
+#experience h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+#education p,
+#experience p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    background: #111827;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+#projects > h2 {
+    width: 100%;
+}
+
+.project-card {
+    width: 30%;
+    min-width: 280px;
+
+    padding: 25px;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+#certifications ul {
+    max-width: 700px;
+    margin: auto;
+
+    list-style: none;
+}
+
+#certifications li {
+    padding: 18px 20px;
+    margin-bottom: 12px;
+
+    background: #1e293b;
+    border-left: 4px solid #38bdf8;
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background: #111827;
+}
+
+#contactForm {
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    background: #0f172a;
+    color: white;
+
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+#contactForm button {
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #38bdf8;
+    color: #082f49;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 8%;
+
+    text-align: center;
+
+    background: #020617;
+    color: #94a3b8;
+}
+
+footer a {
+    display: inline-block;
+    margin: 10px;
+
+    color: #38bdf8;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 65px 6%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    #home {
+        min-height: 80vh;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    #home a {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
