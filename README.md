@@ -233,17 +233,27 @@ https://www.linkedin.com/in/krushna-manthalkar/
 
 ### Live Portfolio
 
-> Add deployed portfolio URL here after deployment.
+https://krushna-manthalkar-developer-portfo.vercel.app/
 
 ### Live Backend API
 
-> Add deployed backend/API URL here after backend deployment.
+https://krushnamanthalkar-developerportfolio.onrender.com/
 
 ---
 
 ## 📸 Project Screenshots
 
-Screenshots demonstrating the desktop and mobile versions of the portfolio, contact form and database functionality will be added here.
+### Desktop View
+![Desktop View](screenshot/Desktop_Screenshot.png)
+
+### Mobile View
+![Mobile View](screenshot/Mobile_Screenshot.png)
+
+### Contact Form Evidence
+![Contact Form Evidence](screenshot/Contact_Form_Evidence.png)
+
+### Database Evidence
+![Database Evidence](screenshot/Database_Evidence.png)
 
 ---
 
