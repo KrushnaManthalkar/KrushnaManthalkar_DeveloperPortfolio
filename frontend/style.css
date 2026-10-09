@@ -76,7 +76,7 @@ section > h2::after { content: ""; display: block; width: 52px; height: 3px; mar
 .portrait-caption p { margin-top: 3px; color: var(--muted); font-size: .75rem; }
 .portrait-arrow { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 11px; color: var(--cyan); }
 .floating-chip { position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1px solid rgba(144,174,221,.24); border-radius: 14px; background: rgba(12,21,40,.92); box-shadow: 0 15px 40px rgba(0,0,0,.25); backdrop-filter: blur(12px); }
-.chip-code { top: 19%; right: -1%; }.chip-stack { bottom: 10%; left: -18.5%; }
+.chip-code { top: 19%; right: -1%; }.chip-stack { bottom: -5%; right: 0%; left: auto; }
 .chip-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; color: var(--cyan); background: rgba(94,231,247,.1); font: 700 .8rem var(--font-display); }
 .chip-icon-blue { color: #b5a5ff; background: rgba(167,139,250,.13); }
 .floating-chip strong,.floating-chip small { display: block; }.floating-chip strong { font-size: .74rem; }.floating-chip small { color: #91a1bb; font-size: .64rem; }
@@ -115,7 +115,7 @@ footer a { display: inline-block; margin: 10px; color: #9fc8ff; transition: colo
     .nav-links { gap: 11px; }.nav-links a { font-size: .75rem; }
     .hero-inner { grid-template-columns: 1.05fr .95fr; gap: 25px; }
     .portrait-card { width: min(100%,330px); }
-    .floating-chip { padding: 9px 10px; }.chip-code { right: -2%; }.chip-stack { left: -4%; }
+    .floating-chip { padding: 9px 10px; }.chip-code { right: -2%; }.chip-stack { bottom: -4%; right: 0%; left: auto; }
 }
 @media (max-width: 760px) {
     section { padding: 78px 6%; }
@@ -131,7 +131,7 @@ footer a { display: inline-block; margin: 10px; color: #9fc8ff; transition: colo
     .hero-inner { grid-template-columns: 1fr; gap: 0; }
     .hero-copy { padding: 20px 0 5px; }.hero h1 { font-size: clamp(2.8rem,10vw,4.2rem); }
     .hero-visual { min-height: 420px; margin-top: 8px; }
-    .portrait-card { width: min(78%,330px); }.chip-code { top: 16%; right: 1%; }.chip-stack { bottom: -3%; left: 1%; }
+    .portrait-card { width: min(78%,330px); }.chip-code { top: 16%; right: 1%; }.chip-stack { bottom: -3%; right: auto; left: 1%; }
     .hero-bottom { margin-top: 24px; font-size: .54rem; letter-spacing: .08em; }
     #education > div,#experience > div { padding: 24px; }
 }
