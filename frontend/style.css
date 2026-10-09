@@ -76,7 +76,7 @@ section > h2::after { content: ""; display: block; width: 52px; height: 3px; mar
 .portrait-caption p { margin-top: 3px; color: var(--muted); font-size: .75rem; }
 .portrait-arrow { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 11px; color: var(--cyan); }
 .floating-chip { position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1px solid rgba(144,174,221,.24); border-radius: 14px; background: rgba(12,21,40,.92); box-shadow: 0 15px 40px rgba(0,0,0,.25); backdrop-filter: blur(12px); }
-.chip-code { top: 13%; right: -1%; }.chip-stack { bottom: 10%; left: -5%; }
+.chip-code { top: 13%; right: -1%; }.chip-stack { bottom: -5%; left: -5%; }
 .chip-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; color: var(--cyan); background: rgba(94,231,247,.1); font: 700 .8rem var(--font-display); }
 .chip-icon-blue { color: #b5a5ff; background: rgba(167,139,250,.13); }
 .floating-chip strong,.floating-chip small { display: block; }.floating-chip strong { font-size: .74rem; }.floating-chip small { color: #91a1bb; font-size: .64rem; }
@@ -140,13 +140,13 @@ footer a { display: inline-block; margin: 10px; color: #9fc8ff; transition: colo
     .site-nav { width: calc(100% - 30px); }
     .hero h1 { font-size: clamp(2.55rem,11vw,3.5rem); }
     .hero-actions { flex-direction: column; align-items: stretch; }.hero-actions .button { width: 100%; }
-    .hero-visual { min-height: 370px; }
+    .hero-visual { min-height: 390px; }
     .portrait-card { width: min(82%,300px); padding: 12px; }
     .portrait-frame { width: min(100%,230px); }
     .portrait-topline { font-size: .44rem; }.portrait-live { font-size: .4rem; }
     .floating-chip { gap: 7px; padding: 8px 9px; }.chip-icon { width: 27px; height: 27px; }
     .floating-chip strong { font-size: .67rem; }.floating-chip small { font-size: .57rem; }
-    .chip-code { top: 8%; right: 0; }.chip-stack { bottom: 6%; left: 0; }
+    .chip-code { top: 8%; right: 0; }.chip-stack { bottom: -4%; left: 0; }
     .hero-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
     #skills li { padding: 10px 13px; font-size: .8rem; }
     .project-card { min-width: 0; flex-basis: 100%; padding: 22px; }
