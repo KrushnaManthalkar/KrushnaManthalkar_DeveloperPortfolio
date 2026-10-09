@@ -4,44 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="theme-color" content="#080d1b">
+    <meta name="description" content="Krushna Manthalkar — Full Stack Developer and MCA candidate building practical web applications.">
     <title>Krushna Manthalkar | Full Stack Developer</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <div class="logo">Krushna</div>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Krushna home">K<span>rushna</span><b>.</b></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <!-- Home -->
-    <section id="home">
-        <h1>Hi, I'm Krushna Manthalkar</h1>
-        <h2>Full Stack Developer</h2>
-
-        <p>
-            MCA Student passionate about building web applications
-            and learning modern technologies.
-        </p>
-
-        <a href="#projects">View My Projects</a>
-        <a href="assets/KrushnaKeshavManthalkar_Resume.pdf" download="KrushnaManthalkar_Resume.pdf" class="btn">
-            Download Resume
-        </a>
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> MCA candidate · Full Stack Developer</p>
+                <h1>Hi, I'm <span class="gradient-text">Krushna Manthalkar</span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>
+                    MCA Student passionate about building web applications
+                    and learning modern technologies.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">View My Projects <span aria-hidden="true">↗</span></a>
+                    <a href="assets/KrushnaKeshavManthalkar_Resume.pdf" download="KrushnaManthalkar_Resume.pdf" class="button button-secondary">
+                        <span aria-hidden="true">↓</span> Download Resume
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/KrushnaManthalkar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <span class="social-divider"></span>
+                    <a href="https://www.linkedin.com/in/krushna-manthalkar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+                <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+                <div class="portrait-card">
+                    <div class="portrait-topline"><span>DEVELOPER PROFILE</span><span class="portrait-live"><span></span> PORTFOLIO</span></div>
+                    <div class="portrait-frame">
+                        <div class="portrait-placeholder" aria-hidden="true">KM</div>
+                        <img class="portrait-img" src="assets/profile.jpg" alt="Portrait of Krushna Manthalkar">
+                    </div>
+                    <div class="portrait-caption">
+                        <div><h3>Krushna Manthalkar</h3><p>Full Stack Developer · MCA</p></div>
+                        <span class="portrait-arrow" aria-hidden="true">↗</span>
+                    </div>
+                </div>
+                <div class="floating-chip chip-code"><span class="chip-icon">&lt;/&gt;</span><span><strong>Build</strong><small>with purpose</small></span></div>
+                <div class="floating-chip chip-stack"><span class="chip-icon chip-icon-blue">✦</span><span><strong>Full stack</strong><small>curious by nature</small></span></div>
+            </div>
+        </div>
+        <div class="hero-bottom"><span>JAVA · JAVASCRIPT · NODE.JS · MONGODB</span><a href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
     </section>
 
 
@@ -152,17 +189,22 @@
     <section id="contact">
         <h2>Contact Me</h2>
 
-        <form id="contactForm">
+        <form id="contactForm" class="contact-form">
 
-            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
 
-            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
 
-            <input type="text" id="subject" placeholder="Subject" required>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
-            <textarea id="message" placeholder="Your Message" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button class="button button-primary submit-button" type="submit">Send Message <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="formStatus" role="status" aria-live="polite"></p>
 
         </form>
     </section>
