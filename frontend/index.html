@@ -83,34 +83,29 @@
 
 
     <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-
-        <p>
-            I am an MCA student interested in Full Stack Development,
-            software development and building practical projects.
-        </p>
+    <section id="about" class="content-section">
+        <div class="section-heading">
+            <p class="eyebrow">PROFILE SUMMARY</p>
+            <h2>Building useful products with <span class="gradient-text">full-stack thinking.</span></h2>
+        </div>
+        <div class="summary-panel">
+            <p>Full Stack Developer and MCA candidate with hands-on experience building responsive web interfaces, RESTful APIs, and database-backed applications using Java, Spring Boot, JavaScript, Node.js, Express.js, MongoDB, and MySQL. Experienced in developing end-to-end features spanning authentication, role-based access, CRUD workflows, data validation, and persistent storage. Completed full-stack training and internship project work, including a Learning Management System with separate student and admin workflows. Focused on writing maintainable code, solving practical problems, and continuously improving application usability and reliability.</p>
+        </div>
     </section>
 
-
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Spring Boot</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Git & GitHub</li>
-        </ul>
+    <!-- Technical Skills -->
+    <section id="skills" class="content-section">
+        <div class="section-heading">
+            <p class="eyebrow">TECHNICAL TOOLKIT</p>
+            <h2>Skills that bring ideas to <span class="gradient-text">life.</span></h2>
+        </div>
+        <div class="skills-grid">
+            <article class="skill-card"><span class="skill-symbol">⌘</span><h3>Languages & Frontend</h3><p>Java, JavaScript, HTML5, CSS3, Bootstrap, responsive UI development</p></article>
+            <article class="skill-card"><span class="skill-symbol">◈</span><h3>Backend & APIs</h3><p>Node.js, Express.js, Spring Boot, RESTful APIs, authentication, validation</p></article>
+            <article class="skill-card"><span class="skill-symbol">▤</span><h3>Databases</h3><p>MongoDB, MongoDB Atlas, MySQL, MariaDB, Mongoose, Spring Data JPA</p></article>
+            <article class="skill-card"><span class="skill-symbol">⌁</span><h3>Tools & Deployment</h3><p>Git, GitHub, VS Code, Thunder Client, Vercel, Render</p></article>
+        </div>
     </section>
-
 
     <!-- Education -->
     <section id="education">
@@ -134,41 +129,56 @@
         <div>
             <h3>Full Stack Development Intern</h3>
             <p>Quillance Infotech Pvt. Ltd.</p>
-            <p>August 2026 – Present</p>
+            <p>August 2026 – October 2026</p>
         </div>
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>Lost & Found Portal</h3>
-            <p>
-                A web-based platform for reporting, managing and
-                tracking lost and found items.
-            </p>
-            <p>Technologies: Node.js, Express.js, MongoDB</p>
+    <!-- Selected Projects -->
+    <section id="projects" class="content-section projects-section">
+        <div class="section-heading">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Projects made to solve <span class="gradient-text">real problems.</span></h2>
+            <p class="section-subtitle">A selection of academic and full-stack projects. Explore each repository for implementation details and source code.</p>
         </div>
-
-        <div class="project-card">
-            <h3>Developer Portfolio</h3>
-            <p>
-                A responsive portfolio website showcasing my skills,
-                education, projects and professional profile.
-            </p>
-            <p>Technologies: HTML, CSS, JavaScript, Node.js</p>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-topline"><span class="project-badge">FULL-STACK · LMS</span><span class="project-number">01</span></div>
+                <h3>Learning Management System</h3>
+                <p>A full-stack learning platform with separate student and admin workflows for course enrollment, ordered modules, progress tracking, assignment submissions, marks, and feedback.</p>
+                <div class="project-tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span></div>
+                <a class="project-link" href="https://github.com/KrushnaManthalkar/KrushnaManthalkar_LMS" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-badge">JAVA · HEALTHCARE</span><span class="project-number">02</span></div>
+                <h3>MedSphere</h3>
+                <p>A role-based hospital information system covering patients, doctors, departments, appointments, consultations, prescriptions, and medical history.</p>
+                <div class="project-tags"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>MySQL</span></div>
+                <a class="project-link" href="https://github.com/KrushnaManthalkar/MedSphere-Sem3" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-badge">FULL-STACK · PRODUCTIVITY</span><span class="project-number">03</span></div>
+                <h3>TaskFlow — Task Manager</h3>
+                <p>A task management app with registration and login, protected APIs, task CRUD, priorities, due dates, progress summaries, and search/filter tools.</p>
+                <div class="project-tags"><span>JavaScript</span><span>Express.js</span><span>MongoDB Atlas</span><span>JWT</span></div>
+                <a class="project-link" href="https://github.com/KrushnaManthalkar/KrushnaManthalkar_TaskManagement" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-badge">CAREER TOOL · CRUD</span><span class="project-number">04</span></div>
+                <h3>Internship Application Tracker</h3>
+                <p>A dashboard for organizing internship applications, tracking statuses, viewing summary counts, and managing entries with search/filter and database-backed CRUD.</p>
+                <div class="project-tags"><span>HTML/CSS/JS</span><span>Node.js</span><span>Express.js</span><span>MongoDB Atlas</span></div>
+                <a class="project-link" href="https://github.com/KrushnaManthalkar/KrushnaManthalkar_InternshipApplicationTracker" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-badge">WEB · PERSONAL BRAND</span><span class="project-number">05</span></div>
+                <h3>Developer Portfolio</h3>
+                <p>This portfolio website, designed to present my skills, experience, selected projects, résumé, and contact form with a Node.js API and MongoDB Atlas storage.</p>
+                <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Express.js</span><span>MongoDB</span></div>
+                <a class="project-link" href="https://github.com/KrushnaManthalkar/KrushnaManthalkar_DeveloperPortfolio" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
+            </article>
         </div>
-
-        <div class="project-card">
-            <h3>Java / Spring Boot Project</h3>
-            <p>
-                A backend application developed to practice Java,
-                Spring Boot and database integration.
-            </p>
-            <p>Technologies: Java, Spring Boot, MySQL</p>
-        </div>
+        <div class="projects-footer"><a class="button button-secondary" href="https://github.com/KrushnaManthalkar?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all GitHub repositories <span aria-hidden="true">↗</span></a></div>
     </section>
 
 
